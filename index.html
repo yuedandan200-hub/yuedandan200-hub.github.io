@@ -1,89 +1,224 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>我的主页</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球数字资源服务中心</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    font-family: Arial;
-    background:#f4f6f8;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
 }
 
 .header{
-    background:#111827;
-    color:white;
-    padding:20px;
+    padding:60px 20px;
     text-align:center;
-    font-size:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
 }
 
-.container{
-    max-width:700px;
-    margin:20px auto;
-    padding:10px;
-}
-
-.card{
-    background:white;
-    padding:15px;
+.header h1{
+    font-size:36px;
     margin-bottom:15px;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
-.notice{
-    background:#ffefc0;
-    color:#5c4409;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
-    border:1px solid #fecd4d;
-    border-radius:10px;
-    font-weight:bold;
-    font-size:16px;
+.header p{
+    color:#cbd5e1;
+    font-size:18px;
 }
 
 .btn{
     display:inline-block;
-    padding:8px 12px;
+    margin-top:25px;
+    padding:12px 28px;
     background:#2563eb;
-    color:white;
-    border-radius:8px;
+    color:#fff;
     text-decoration:none;
+    border-radius:8px;
 }
-</style>
 
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+.advantage{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.adv{
+    background:#111827;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    background:#1e293b;
+    max-width:600px;
+    margin:auto;
+    padding:30px;
+    border-radius:12px;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+    border-top:1px solid #334155;
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="header">
-我的工具网站
+    <h1>全球数字资源服务中心</h1>
+    <p>跨境账号 · 海外网络资源 · 数字服务解决方案</p>
+
+    <a href="#contact" class="btn">
+        立即联系
+    </a>
 </div>
 
-<div class="container">
+<section class="section">
 
-<div class="card">
-<h3>📌 账号信息</h3>
-<p>美国区账号：正常（quodonnell@gmail.com / Dd10096da）</p>
-</div>
+    <h2 class="title">主营业务</h2>
 
-<div class="card">
-<h3>📌 更新说明</h3>
-<p>每天更新一次状态</p>
-</div>
+    <div class="grid">
 
-<div class="card">
-<h3>📌 入口</h3>
-<a class="btn" href="#">进入更多内容</a>
-</div>
+        <div class="card">
+            <h3>Facebook相关服务</h3>
+            <p>跨境运营相关资源与服务支持。</p>
+        </div>
 
-<div class="notice">
-只能在 iPhone Store 登录，再设置登录，导致锁机后果自负。
-</div>
+        <div class="card">
+            <h3>TikTok相关服务</h3>
+            <p>跨境电商与短视频运营支持。</p>
+        </div>
+
+        <div class="card">
+            <h3>Instagram资源</h3>
+            <p>海外社媒运营相关资源服务。</p>
+        </div>
+
+        <div class="card">
+            <h3>海外邮箱资源</h3>
+            <p>海外业务场景所需邮箱服务。</p>
+        </div>
+
+        <div class="card">
+            <h3>海外网络资源</h3>
+            <p>多地区网络环境解决方案。</p>
+        </div>
+
+        <div class="card">
+            <h3>跨境电商支持</h3>
+            <p>TikTok Shop与海外平台运营支持。</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2 class="title">我们的优势</h2>
+
+    <div class="advantage">
+
+        <div class="adv">
+            <h3>快速交付</h3>
+            <p>及时响应客户需求</p>
+        </div>
+
+        <div class="adv">
+            <h3>长期服务</h3>
+            <p>持续售后支持</p>
+        </div>
+
+        <div class="adv">
+            <h3>稳定合作</h3>
+            <p>面向长期客户合作</p>
+        </div>
+
+        <div class="adv">
+            <h3>经验丰富</h3>
+            <p>专注跨境数字服务</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+    <h2 class="title">联系我们</h2>
+
+    <div class="contact-box">
+
+        <p>业务咨询请联系：</p>
+
+        <br>
+
+        <p>Telegram：@yourtelegram</p>
+
+        <p>WhatsApp：+1xxxxxxxxxx</p>
+
+        <p>微信：yourwechat</p>
+
+        <p>邮箱：your@email.com</p>
+
+    </div>
+
+</section>
+
+<div class="footer">
+
+    © 2026 全球数字资源服务中心
 
 </div>
 
